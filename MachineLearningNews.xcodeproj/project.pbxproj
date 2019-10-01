@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		0271D7BF233B18350052B24D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0271D7BD233B18350052B24D /* Main.storyboard */; };
 		0271D7C1233B18350052B24D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0271D7C0233B18350052B24D /* Assets.xcassets */; };
 		0271D7C4233B18350052B24D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0271D7C2233B18350052B24D /* LaunchScreen.storyboard */; };
+		E476DDB8F1ECDB6F5FED0808 /* Pods_MachineLearningNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312E9D7FF7DF62D804797D68 /* Pods_MachineLearningNews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0271D7C0233B18350052B24D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0271D7C3233B18350052B24D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0271D7C5233B18350052B24D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		312E9D7FF7DF62D804797D68 /* Pods_MachineLearningNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MachineLearningNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C97763F1841399B5FAE98AD /* Pods-MachineLearningNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MachineLearningNews.debug.xcconfig"; path = "Target Support Files/Pods-MachineLearningNews/Pods-MachineLearningNews.debug.xcconfig"; sourceTree = "<group>"; };
+		D2940145368711CC4D4966FA /* Pods-MachineLearningNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MachineLearningNews.release.xcconfig"; path = "Target Support Files/Pods-MachineLearningNews/Pods-MachineLearningNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E476DDB8F1ECDB6F5FED0808 /* Pods_MachineLearningNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0271D7B8233B18350052B24D /* MachineLearningNews */,
 				0271D7B7233B18350052B24D /* Products */,
+				0F5F35EE43C4620170D5BA31 /* Pods */,
+				DCE6327387C2699B6F6CFDEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = MachineLearningNews;
 			sourceTree = "<group>";
 		};
+		0F5F35EE43C4620170D5BA31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C97763F1841399B5FAE98AD /* Pods-MachineLearningNews.debug.xcconfig */,
+				D2940145368711CC4D4966FA /* Pods-MachineLearningNews.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCE6327387C2699B6F6CFDEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				312E9D7FF7DF62D804797D68 /* Pods_MachineLearningNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0271D7C8233B18350052B24D /* Build configuration list for PBXNativeTarget "MachineLearningNews" */;
 			buildPhases = (
+				9161D9EA83B983D7CE473584 /* [CP] Check Pods Manifest.lock */,
 				0271D7B2233B18350052B24D /* Sources */,
 				0271D7B3233B18350052B24D /* Frameworks */,
 				0271D7B4233B18350052B24D /* Resources */,
+				1AAEC82DD6C71575FE37E95E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AAEC82DD6C71575FE37E95E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MachineLearningNews/Pods-MachineLearningNews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MachineLearningNews/Pods-MachineLearningNews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MachineLearningNews/Pods-MachineLearningNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9161D9EA83B983D7CE473584 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MachineLearningNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0271D7B2233B18350052B24D /* Sources */ = {
@@ -220,6 +288,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -274,12 +343,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		0271D7C9233B18350052B24D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C97763F1841399B5FAE98AD /* Pods-MachineLearningNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +369,7 @@
 		};
 		0271D7CA233B18350052B24D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2940145368711CC4D4966FA /* Pods-MachineLearningNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
