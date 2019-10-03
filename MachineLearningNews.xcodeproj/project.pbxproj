@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0271D7BA233B18350052B24D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271D7B9233B18350052B24D /* AppDelegate.swift */; };
-		0271D7BC233B18350052B24D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271D7BB233B18350052B24D /* ViewController.swift */; };
 		0271D7BF233B18350052B24D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0271D7BD233B18350052B24D /* Main.storyboard */; };
 		0271D7C1233B18350052B24D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0271D7C0233B18350052B24D /* Assets.xcassets */; };
 		0271D7C4233B18350052B24D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0271D7C2233B18350052B24D /* LaunchScreen.storyboard */; };
+		028B316D23461CBA0094248F /* NewsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028B316C23461CBA0094248F /* NewsHelper.swift */; };
+		028B316F23461FB70094248F /* ArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028B316E23461FB70094248F /* ArticleTableViewController.swift */; };
+		028B317123461FE40094248F /* ArticleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028B317023461FE40094248F /* ArticleWebViewController.swift */; };
 		E476DDB8F1ECDB6F5FED0808 /* Pods_MachineLearningNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312E9D7FF7DF62D804797D68 /* Pods_MachineLearningNews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0271D7B6233B18350052B24D /* MachineLearningNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MachineLearningNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0271D7B9233B18350052B24D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0271D7BB233B18350052B24D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0271D7BE233B18350052B24D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0271D7C0233B18350052B24D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0271D7C3233B18350052B24D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0271D7C5233B18350052B24D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		028B316C23461CBA0094248F /* NewsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHelper.swift; sourceTree = "<group>"; };
+		028B316E23461FB70094248F /* ArticleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewController.swift; sourceTree = "<group>"; };
+		028B317023461FE40094248F /* ArticleWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebViewController.swift; sourceTree = "<group>"; };
 		312E9D7FF7DF62D804797D68 /* Pods_MachineLearningNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MachineLearningNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C97763F1841399B5FAE98AD /* Pods-MachineLearningNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MachineLearningNews.debug.xcconfig"; path = "Target Support Files/Pods-MachineLearningNews/Pods-MachineLearningNews.debug.xcconfig"; sourceTree = "<group>"; };
 		D2940145368711CC4D4966FA /* Pods-MachineLearningNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MachineLearningNews.release.xcconfig"; path = "Target Support Files/Pods-MachineLearningNews/Pods-MachineLearningNews.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,8 +65,10 @@
 		0271D7B8233B18350052B24D /* MachineLearningNews */ = {
 			isa = PBXGroup;
 			children = (
+				028B316E23461FB70094248F /* ArticleTableViewController.swift */,
+				028B317023461FE40094248F /* ArticleWebViewController.swift */,
+				028B316C23461CBA0094248F /* NewsHelper.swift */,
 				0271D7B9233B18350052B24D /* AppDelegate.swift */,
-				0271D7BB233B18350052B24D /* ViewController.swift */,
 				0271D7BD233B18350052B24D /* Main.storyboard */,
 				0271D7C0233B18350052B24D /* Assets.xcassets */,
 				0271D7C2233B18350052B24D /* LaunchScreen.storyboard */,
@@ -203,8 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0271D7BC233B18350052B24D /* ViewController.swift in Sources */,
 				0271D7BA233B18350052B24D /* AppDelegate.swift in Sources */,
+				028B316F23461FB70094248F /* ArticleTableViewController.swift in Sources */,
+				028B317123461FE40094248F /* ArticleWebViewController.swift in Sources */,
+				028B316D23461CBA0094248F /* NewsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

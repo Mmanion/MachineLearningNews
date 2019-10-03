@@ -13,7 +13,7 @@
         <!--NewsFun-->
         <scene sceneID="PqC-cj-DO1">
             <objects>
-                <tableViewController id="N6l-g1-k4r" sceneMemberID="viewController">
+                <tableViewController id="N6l-g1-k4r" customClass="ArticleTableViewController" customModule="MachineLearningNews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RoA-Pg-1q8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="504.80000000000001" y="158.77061469265368"/>
         </scene>
-        <!--View Controller-->
+        <!--Article Web View Controller-->
         <scene sceneID="kgK-pQ-EMm">
             <objects>
-                <viewController id="oaF-Up-lDZ" sceneMemberID="viewController">
+                <viewController id="oaF-Up-lDZ" customClass="ArticleWebViewController" customModule="MachineLearningNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hfx-4z-4Sa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
